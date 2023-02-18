@@ -54,7 +54,8 @@ def Create_user():
 
         else:
             db = sqlite3.connect(
-                "C:\\Users\\abdul\\Downloads\\My-Github\\Python_project\\Supermarket_project_3\\Database\\Supermarket_Users.db")
+                "C:\\Users\\abdul\\Downloads\\My-Github\\Python_project\\Supermarket_project_3\\Database"
+                "\\Supermarket_Users.db")
 
             my_cursor = db.cursor()
             full_name = create_user_full_name_var.get()
@@ -230,8 +231,8 @@ button_2 = Button(frame_1, text='حسابنا على انستقرام', width=22
                   font=('Tajawal-Medium', 10, 'bold'), command=link_tow)
 button_3 = Button(frame_1, text='من نحن', width=22, fg='black', bg='#F7DC6F',
                   font=('Tajawal-Medium', 10, 'bold'), command=about)
-button_4 = Button(frame_1, text='اغلاق البرنامج', width=22, fg='black', bg='#F7DC6F'
-                  , font=('Tajawal-Medium', 10, 'bold'), command=window.quit)
+button_4 = Button(frame_1, text='اغلاق البرنامج', width=22, fg='black', bg='#F7DC6F',
+                  font=('Tajawal-Medium', 10, 'bold'), command=window.quit)
 
 button_1.place(x=15, y=90)
 button_2.place(x=15, y=137)
